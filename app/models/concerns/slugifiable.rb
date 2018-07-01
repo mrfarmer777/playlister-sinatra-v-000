@@ -2,8 +2,7 @@ require 'pry'
 module Slugifiable
 
   module ClassMethods
-    def find_by_slug(slug)
-      binding.pry
+    def find_by_slug(slug)      
       res=self.all.find {|item| item.slug==slug}
       res
     end
