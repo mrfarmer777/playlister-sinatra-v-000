@@ -4,7 +4,7 @@ module Slugifiable
   module ClassMethods
     def find_by_slug(slug)
       binding.pry
-      res=self.all.select {|item| item.slug==slug}
+      res=self.all.find {|item| item.slug==slug}
 
       end
     end
