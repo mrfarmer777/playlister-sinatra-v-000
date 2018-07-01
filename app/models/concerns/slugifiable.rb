@@ -5,8 +5,7 @@ module Slugifiable
     def find_by_slug(slug)
       binding.pry
       res=self.all.find {|item| item.slug==slug}
-
-      end
+      res
     end
   end
 
